@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-counter',
   template: ` <br />
     <h3>Counter: {{ counter }}</h3>
-
     <button (click)="increaseBy(+1)">+1</button>
     <button (click)="reset()">Reset</button>
     <button (click)="increaseBy(-1)">-1</button>`,
