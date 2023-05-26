@@ -18,4 +18,8 @@ export class mainPageComponent {
     { name: 'Trunks', power: 10 },
     { name: 'Vegeta', power: 7500 },
   ];
+
+  onNewCharacter(character: Character): void {
+    console.log('MainPage->', character);
+  }
 }
