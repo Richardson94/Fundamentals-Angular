@@ -9,12 +9,14 @@
       let isEven = even
     "
     class="list-group-item"
+    [ngClass]="{
+      'list-group-item-success': isFirst,
+      'list-group-item-dark': isLast
+    }"
   >
     <span class="text-primary">{{ i + 1 }}. </span>
     <strong>Name: </strong>
     <span>{{ item.name }} </span>- <strong>Power: </strong>
     <span>{{ item.power }}</span>
-
-    <
   </li>
 </ul>
