@@ -14,6 +14,7 @@ export class ListComponent {
   public characterList: Character[] = [];
 
   onDeleteCharacter(id?: string): void {
+    if (!id) return;
     this.onDelete.emit(id);
   }
 }
