@@ -20,7 +20,7 @@
       <span>{{ item.name }} </span>- <strong>Power: </strong>
       <span>{{ item.power }}</span>
     </div>
-    <button class="btn btn-sm btn-danger" (click)="onDeleteCharacter(i)">
+    <button class="btn btn-sm btn-danger" (click)="onDeleteCharacter(item.id)">
       x
     </button>
   </li>
