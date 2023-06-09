@@ -15,9 +15,13 @@ export class MenuComponent implements OnInit {
         label: 'Angular Pipes',
         icon: 'pi pi-desktop',
         items: [
-          { label: 'Text and Dates', icon: 'pi pi-align-left' },
-          { label: 'Numbers', icon: 'pi pi-dollar' },
-          { label: 'Uncommon', icon: 'pi pi-globe' },
+          {
+            label: 'Text and Dates',
+            icon: 'pi pi-align-left',
+            routerLink: 'basics',
+          },
+          { label: 'Numbers', icon: 'pi pi-dollar', routerLink: 'numbers' },
+          { label: 'Uncommon', icon: 'pi pi-globe', routerLink: 'uncommon' },
         ],
       },
       {
