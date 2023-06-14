@@ -21,11 +21,13 @@
         <li>customDate| Date:'long'</li>
         <li>customDate| Date:'MMMM'</li>
         <li>customDate| Date:'MMMM dd,yyyy'</li>
+        <li>customDate| Date:'MMMM dd,yyyy'</li>
       </ol>
       <hr />
       <ol>
         <li>customDate | date:'long':'GMT-6'</li>
         <li>customDate | date:'long':'GMT-4'</li>
+        <li>customDate | date:'long':'':'es-HN'</li>
       </ol>
     </p-card>
   </div>
@@ -43,6 +45,7 @@
       <ol>
         <li>{{ customDate | date : "long" : "GMT-6" }}</li>
         <li>{{ customDate | date : "long" : "GMT-4" }}</li>
+        <li>{{ customDate | date : "long" : "" : "es-HN" }}</li>
       </ol>
     </p-card>
   </div>
