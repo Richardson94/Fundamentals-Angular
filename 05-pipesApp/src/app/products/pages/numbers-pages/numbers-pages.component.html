@@ -4,9 +4,20 @@
 
 <div class="grid">
   <div class="col-12 md:col-4">
-    <p-card header="Total costs" subheader="This year">
-      {{ totalSells }}
-      {{ percentage }}
+    <p-card header="Total Costs" subheader="This year">
+      {{ totalSells + 1235 | number : "1.2-2" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Brute Costs" subheader="This year">
+      {{ totalSells | currency : "USD" : "symbol-narrow" : "1.5-5" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Potential Profit" subheader="This year">
+      {{ percentage | percent : "1.2-2" }}
     </p-card>
   </div>
 </div>
