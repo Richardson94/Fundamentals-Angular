@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./uncommon-pages.component.css'],
 })
 export class UncommonPagesComponent {
-  //i18n Select
+  //i18nSelect
   public name: string = 'Richardson';
   public gender: 'male' | 'female' = 'male';
   public invitationMap = {
@@ -22,5 +22,25 @@ export class UncommonPagesComponent {
       this.name = 'Richardson';
       this.gender = 'male';
     }
+  }
+
+  //i18nPlural
+  public clients: string[] = [
+    'Maria',
+    'Pedro',
+    'Fernando',
+    'Eduardo',
+    'Melissa',
+    'Natalia',
+  ];
+  public clientsMap = {
+    '=0': 'nothing is waiting',
+    '=1': 'we have only one client waiting',
+    '=2': 'we have two clients waiting',
+    other: 'we have # clients waiting',
+  };
+
+  deleteClient(): void {
+    this.clients.shift();
   }
 }
