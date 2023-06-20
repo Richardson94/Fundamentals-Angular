@@ -1,10 +1,17 @@
 <p-panel header="Custom Pipes" class="p-2">
-  <p>Pipes in Angular - can be created by the {{ "User" | toogleCase }}</p>
+  <p>
+    Pipes in Angular - can be created by the
+    {{ "User" | toogleCase : isUpperCase }}
+  </p>
 </p-panel>
 
 <p-toolbar>
   <div class="p-toolbar-group-start">
-    <p-button label="ToogleCase" icon="pi pi-search"></p-button>
+    <p-button
+      label="ToogleCase"
+      icon="pi pi-search"
+      (click)="toggleUpperCase()"
+    ></p-button>
   </div>
   <div class="p-toolbar-group-end">
     <p-button
