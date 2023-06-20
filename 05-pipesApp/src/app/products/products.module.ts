@@ -8,6 +8,7 @@ import { UncommonPagesComponent } from './pages/uncommon-pages/uncommon-pages.co
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
 import { ToogleCasePipe } from './pipes/toogle-case.pipe';
+import { canFlyPipe } from './pipes/can-fly.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ToogleCasePipe } from './pipes/toogle-case.pipe';
     OrderComponent,
     //Pipes
     ToogleCasePipe,
+    canFlyPipe,
   ],
   imports: [CommonModule, ProductsRoutingModule, PrimeNgModule],
 })
